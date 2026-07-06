@@ -16,6 +16,9 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@200;300;400;500&display=swap" rel="stylesheet" />
 
   <style>
+  img { opacity: 0; transition: opacity 0.5s ease-in; }
+  img.loaded { opacity: 1; }
+
     /* ============================================================
        VARIÁVEIS E RESET
     ============================================================ */
@@ -680,7 +683,7 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-grid"></div>
-    <img class="hero-img" src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=1400&q=85" alt="Vita Care Institute" />
+    <img decoding="async" fetchpriority="high" class="hero-img" src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=1400&q=85" alt="Vita Care Institute" />
     <div class="hero-gradient"></div>
     <div class="hero-content">
       <div class="hero-badge">
@@ -783,7 +786,7 @@
     </div>
     <div class="doctors-grid">
       <div class="doctor-card reveal">
-        <img class="doctor-img" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=85" alt="Dr. Ricardo Almeida" />
+        <img decoding="async" fetchpriority="high" class="doctor-img" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=85" alt="Dr. Ricardo Almeida" />
         <div class="doctor-info">
           <h3>Dr. Ricardo Almeida</h3>
           <div class="specialty">Cardiologista</div>
@@ -791,7 +794,7 @@
         </div>
       </div>
       <div class="doctor-card reveal reveal-delay-1">
-        <img class="doctor-img" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=85" alt="Dra. Marina Costa" />
+        <img decoding="async" loading="lazy" class="doctor-img" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=85" alt="Dra. Marina Costa" />
         <div class="doctor-info">
           <h3>Dra. Marina Costa</h3>
           <div class="specialty">Neurologista</div>
@@ -799,7 +802,7 @@
         </div>
       </div>
       <div class="doctor-card reveal reveal-delay-2">
-        <img class="doctor-img" src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=85" alt="Dr. Felipe Torres" />
+        <img decoding="async" loading="lazy" class="doctor-img" src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=85" alt="Dr. Felipe Torres" />
         <div class="doctor-info">
           <h3>Dr. Felipe Torres</h3>
           <div class="specialty">Oncologista</div>
@@ -807,7 +810,7 @@
         </div>
       </div>
       <div class="doctor-card reveal reveal-delay-3">
-        <img class="doctor-img" src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&q=85" alt="Dra. Isabela Nunes" />
+        <img decoding="async" loading="lazy" class="doctor-img" src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&q=85" alt="Dra. Isabela Nunes" />
         <div class="doctor-info">
           <h3>Dra. Isabela Nunes</h3>
           <div class="specialty">Endocrinologista</div>
@@ -1015,5 +1018,18 @@
     }, { threshold: 0.5 });
     counters.forEach(c => countObs.observe(c));
   </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const images = document.querySelectorAll('img');
+  images.forEach(img => {
+    if (img.complete) {
+      img.classList.add('loaded');
+    } else {
+      img.addEventListener('load', () => img.classList.add('loaded'));
+    }
+  });
+});
+</script>
 </body>
 </html>
