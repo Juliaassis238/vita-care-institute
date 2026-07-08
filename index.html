@@ -176,13 +176,12 @@
     }
     .hero-content {
       position: absolute;
-      bottom: 4rem;
-      left: 50%;
-      transform: translateX(-50%);
+      bottom: 2rem;
+      left: 5rem;
       z-index: 2;
-      padding: 0 2rem;
-      max-width: 600px;
-      text-align: center;
+      padding: 0;
+      max-width: 500px;
+      text-align: left;
     }
     .hero-badge {
       display: inline-flex;
@@ -231,7 +230,7 @@
       display: flex;
       gap: 1rem;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: flex-start;
       opacity: 0;
       animation: fadeUp 0.8s ease 0.8s forwards;
     }
@@ -670,7 +669,7 @@
       .navbar.scrolled { padding: 1rem 2rem; }
       .nav-links { display: none; }
       .hamburger { display: flex; }
-      .hero-content { padding: 0 2rem; }
+      .hero-content { padding: 0 1.5rem; left: 1.5rem; max-width: calc(100% - 3rem); }
       .hero-stats { right: 2rem; gap: 2rem; }
       .section-specialties { padding: 5rem 2rem; }
       .specialties-grid { grid-template-columns: 1fr 1fr; }
