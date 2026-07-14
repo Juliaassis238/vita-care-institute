@@ -1,7 +1,8 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
-<head>
-  <!--
+<head><link as_="image" href="vitacare_service_1.webp" rel="preload"/>
+<!--
     ============================================================
     VITA CARE INSTITUTE — Premium Medical Clinic
     Projeto desenvolvido por Júlia Ágata de Assis
@@ -9,13 +10,12 @@
     Descrição: Site institucional de clínica médica premium
     ============================================================
   -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vita Care Institute — Medicina de Excelência</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@200;300;400;500&display=swap" rel="stylesheet" />
-
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vita Care Institute — Medicina de Excelência</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=DM+Sans:wght@200;300;400;500&amp;display=swap" rel="stylesheet"/>
+<style>
   img { opacity: 0; transition: opacity 0.5s ease-in; }
   img.loaded { opacity: 1; }
 
@@ -694,324 +694,315 @@
   </style>
 </head>
 <body>
-
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <a href="#" class="logo">
-      <div class="logo-mark"></div>
-      <div>
-        <span class="logo-text">Vita Care Institute</span>
-        <span class="logo-sub">Excellence in Medicine</span>
-      </div>
-    </a>
-    <ul class="nav-links">
-      <li><a href="#especialidades">Especialidades</a></li>
-      <li><a href="#medicos">Médicos</a></li>
-      <li><a href="#sobre">Institucional</a></li>
-      <li><a href="#agendamento">Agendamento</a></li>
-      <li><a href="#agendamento" class="nav-btn">Agendar Consulta</a></li>
-    </ul>
-    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-  </nav>
-
-  <div class="mobile-menu" id="mobileMenu">
-    <button class="menu-close-btn" id="menuClose">&#x2715;</button>
-    <a href="#especialidades" class="menu-link">Especialidades</a>
-    <a href="#medicos" class="menu-link">Médicos</a>
-    <a href="#sobre" class="menu-link">Institucional</a>
-    <a href="#agendamento" class="menu-link">Agendar</a>
-  </div>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-grid"></div>
-    <img decoding="async" fetchpriority="high" class="hero-img" src="vitacare_service_1.webp" alt="Vita Care Institute" />
-    <div class="hero-gradient"></div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <div class="hero-badge-dot"></div>
-        <span>Instituto Médico Premium — Desde 2008</span>
-      </div>
-      <h1 class="hero-title">
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+<a class="logo" href="#">
+<div class="logo-mark"></div>
+<div>
+<span class="logo-text">Vita Care Institute</span>
+<span class="logo-sub">Excellence in Medicine</span>
+</div>
+</a>
+<ul class="nav-links">
+<li><a href="#especialidades">Especialidades</a></li>
+<li><a href="#medicos">Médicos</a></li>
+<li><a href="#sobre">Institucional</a></li>
+<li><a href="#agendamento">Agendamento</a></li>
+<li><a class="nav-btn" href="#agendamento">Agendar Consulta</a></li>
+</ul>
+<button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+<button class="menu-close-btn" id="menuClose">✕</button>
+<a class="menu-link" href="#especialidades">Especialidades</a>
+<a class="menu-link" href="#medicos">Médicos</a>
+<a class="menu-link" href="#sobre">Institucional</a>
+<a class="menu-link" href="#agendamento">Agendar</a>
+</div>
+<!-- HERO -->
+<section class="hero">
+<div class="hero-grid"></div>
+<img alt="Vita Care Institute" class="hero-img" decoding="async" fetchpriority="high" loading="eager" src="vitacare_service_1.webp"/>
+<div class="hero-gradient"></div>
+<div class="hero-content">
+<div class="hero-badge">
+<div class="hero-badge-dot"></div>
+<span>Instituto Médico Premium — Desde 2008</span>
+</div>
+<h1 class="hero-title">
         Medicina de alta <span>complexidade</span> e cuidado humano.
       </h1>
-      <p class="hero-desc">
+<p class="hero-desc">
         O Vita Care Institute reúne especialistas de excelência em um ambiente de última geração, oferecendo diagnósticos precisos e tratamentos personalizados de nível internacional.
       </p>
-      <div class="hero-actions">
-        <a href="#agendamento" class="btn-cyan">Agendar Consulta</a>
-        <a href="#especialidades" class="btn-ghost">Nossas Especialidades</a>
-      </div>
-    </div>
-    <div class="hero-stats">
-      <div class="hero-stat">
-        <strong>98%</strong>
-        <span>Satisfação dos Pacientes</span>
-      </div>
-      <div class="hero-stat">
-        <strong>42</strong>
-        <span>Especialistas</span>
-      </div>
-      <div class="hero-stat">
-        <strong>15k+</strong>
-        <span>Atendimentos/Ano</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- MÉDICOS -->
-  <section class="section-doctors" id="medicos">
-    <div class="doctors-header">
-      <span class="label-tag" style="color:rgba(0,212,255,0.7)">Nossa Equipe</span>
-      <h2 class="section-title" style="color:var(--white)">Especialistas de <em>alto nível</em></h2>
-    </div>
-    <div class="doctors-grid">
-      <div class="doctor-card reveal">
-        <img decoding="async" fetchpriority="high" class="doctor-img" src="vitacare_service_2.webp" alt="Dr. Ricardo Almeida" />
-        <div class="doctor-info">
-          <h3>Dr. Ricardo Almeida</h3>
-          <div class="specialty">Cardiologista</div>
-          <div class="crm">CRM 45.231 — SP</div>
-        </div>
-      </div>
-      <div class="doctor-card reveal reveal-delay-1">
-        <img decoding="async" loading="lazy" class="doctor-img" src="vitacare_service_3.webp" alt="Dra. Marina Costa" />
-        <div class="doctor-info">
-          <h3>Dra. Marina Costa</h3>
-          <div class="specialty">Neurologista</div>
-          <div class="crm">CRM 38.874 — SP</div>
-        </div>
-      </div>
-      <div class="doctor-card reveal reveal-delay-2">
-        <img decoding="async" loading="lazy" class="doctor-img" src="vitacare_gallery_1.webp" alt="Dr. Felipe Torres" />
-        <div class="doctor-info">
-          <h3>Dr. Felipe Torres</h3>
-          <div class="specialty">Oncologista</div>
-          <div class="crm">CRM 52.108 — SP</div>
-        </div>
-      </div>
-      <div class="doctor-card reveal reveal-delay-3">
-        <img decoding="async" loading="lazy" class="doctor-img" src="vitacare_gallery_2.webp" alt="Dra. Isabela Nunes" />
-        <div class="doctor-info">
-          <h3>Dra. Isabela Nunes</h3>
-          <div class="specialty">Endocrinologista</div>
-          <div class="crm">CRM 41.559 — SP</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ESPECIALIDADES -->
-  <section class="section-specialties" id="especialidades">
-    <div class="specialties-header">
-      <div>
-        <span class="label-tag">Nossa Expertise</span>
-        <h2 class="section-title">Especialidades <em>médicas</em></h2>
-      </div>
-      <a href="#agendamento" class="btn-cyan">Ver Todas</a>
-    </div>
-    <div class="specialties-grid">
-      <div class="specialty-card reveal">
-        <div class="specialty-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.75l6 6 9-13.5"/></svg>
-        </div>
-        <h3>Cardiologia</h3>
-        <p>Diagnóstico e tratamento de doenças cardiovasculares com tecnologia de ponta e equipe altamente especializada.</p>
-        <a href="#" class="specialty-link">Saiba mais</a>
-      </div>
-      <div class="specialty-card reveal reveal-delay-1">
-        <div class="specialty-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 12h6M12 9v6"/></svg>
-        </div>
-        <h3>Neurologia</h3>
-        <p>Abordagem integrada para distúrbios neurológicos com exames de imagem de última geração e protocolos internacionais.</p>
-        <a href="#" class="specialty-link">Saiba mais</a>
-      </div>
-      <div class="specialty-card reveal reveal-delay-2">
-        <div class="specialty-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
-        </div>
-        <h3>Oncologia</h3>
-        <p>Centro de referência em oncologia clínica, com tratamentos individualizados baseados em evidências científicas atuais.</p>
-        <a href="#" class="specialty-link">Saiba mais</a>
-      </div>
-      <div class="specialty-card reveal">
-        <div class="specialty-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
-        </div>
-        <h3>Ortopedia</h3>
-        <p>Cirurgias minimamente invasivas e reabilitação avançada para o tratamento de doenças osteomusculares.</p>
-        <a href="#" class="specialty-link">Saiba mais</a>
-      </div>
-      <div class="specialty-card reveal reveal-delay-1">
-        <div class="specialty-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
-        </div>
-        <h3>Endocrinologia</h3>
-        <p>Diagnóstico e tratamento de distúrbios hormonais com acompanhamento longitudinal e medicina preventiva.</p>
-        <a href="#" class="specialty-link">Saiba mais</a>
-      </div>
-      <div class="specialty-card reveal reveal-delay-2">
-        <div class="specialty-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12V6a2 2 0 00-2-2H6a2 2 0 00-2 2v6m16 0v6a2 2 0 01-2 2H6a2 2 0 01-2-2v-6m16 0H4"/></svg>
-        </div>
-        <h3>Medicina Preventiva</h3>
-        <p>Check-up executivo completo com análise laboratorial avançada e plano de saúde personalizado.</p>
-        <a href="#" class="specialty-link">Saiba mais</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ESTATÍSTICAS -->
-  <section class="section-stats">
-    <div class="stats-grid">
-      <div class="stat-block reveal">
-        <strong class="count-num" data-target="15000">0</strong>
-        <span>Pacientes Atendidos</span>
-      </div>
-      <div class="stat-block reveal reveal-delay-1">
-        <strong class="count-num" data-target="42">0</strong>
-        <span>Especialistas</span>
-      </div>
-      <div class="stat-block reveal reveal-delay-2">
-        <strong class="count-num" data-target="16">0</strong>
-        <span>Anos de Excelência</span>
-      </div>
-      <div class="stat-block reveal reveal-delay-3">
-        <strong class="count-num" data-target="98">0</strong>
-        <span>% de Satisfação</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- AGENDAMENTO -->
-  <section class="section-booking" id="agendamento">
-    <div class="booking-inner">
-      <div class="booking-info reveal">
-        <span class="label-tag">Atendimento Premium</span>
-        <h2 class="section-title">Agende sua <em>consulta</em> com facilidade</h2>
-        <p>Nossa equipe de atendimento está disponível de segunda a sábado para garantir que você tenha acesso rápido e cômodo aos melhores especialistas.</p>
-        <div class="contact-items">
-          <div class="contact-item">
-            <div>
-              <span class="contact-label">Central de Agendamento</span>
-              <span>(11) 3000-9090</span>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div>
-              <span class="contact-label">Endereço</span>
-              <span>Av. Brigadeiro Faria Lima, 2400 — SP</span>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div>
-              <span class="contact-label">Horário de Funcionamento</span>
-              <span>Segunda a Sábado, 7h às 21h</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="booking-form-wrap reveal reveal-delay-2">
-        <h3 class="form-title">Formulário de Agendamento</h3>
-        <form onsubmit="return false;">
-          <div class="form-row-2">
-            <div class="form-field">
-              <label>Nome Completo</label>
-              <input type="text" placeholder="Seu nome" />
-            </div>
-            <div class="form-field">
-              <label>Data de Nascimento</label>
-              <input type="date" />
-            </div>
-          </div>
-          <div class="form-row-2">
-            <div class="form-field">
-              <label>Telefone</label>
-              <input type="tel" placeholder="(11) 00000-0000" />
-            </div>
-            <div class="form-field">
-              <label>E-mail</label>
-              <input type="email" placeholder="seu@email.com" />
-            </div>
-          </div>
-          <div class="form-row-2">
-            <div class="form-field">
-              <label>Especialidade</label>
-              <select>
-                <option value="">Selecione</option>
-                <option>Cardiologia</option>
-                <option>Neurologia</option>
-                <option>Oncologia</option>
-                <option>Ortopedia</option>
-                <option>Endocrinologia</option>
-              </select>
-            </div>
-            <div class="form-field">
-              <label>Data Preferida</label>
-              <input type="date" />
-            </div>
-          </div>
-          <div class="form-field">
-            <label>Convênio / Plano de Saúde</label>
-            <input type="text" placeholder="Informe seu convênio" />
-          </div>
-          <button type="submit" class="btn-cyan" style="width:100%; border:none; cursor:pointer; font-family:var(--font-sans);">
+<div class="hero-actions">
+<a class="btn-cyan" href="#agendamento">Agendar Consulta</a>
+<a class="btn-ghost" href="#especialidades">Nossas Especialidades</a>
+</div>
+</div>
+<div class="hero-stats">
+<div class="hero-stat">
+<strong>98%</strong>
+<span>Satisfação dos Pacientes</span>
+</div>
+<div class="hero-stat">
+<strong>42</strong>
+<span>Especialistas</span>
+</div>
+<div class="hero-stat">
+<strong>15k+</strong>
+<span>Atendimentos/Ano</span>
+</div>
+</div>
+</section>
+<!-- MÉDICOS -->
+<section class="section-doctors" id="medicos">
+<div class="doctors-header">
+<span class="label-tag" style="color:rgba(0,212,255,0.7)">Nossa Equipe</span>
+<h2 class="section-title" style="color:var(--white)">Especialistas de <em>alto nível</em></h2>
+</div>
+<div class="doctors-grid">
+<div class="doctor-card reveal">
+<img alt="Dr. Ricardo Almeida" class="doctor-img" decoding="async" fetchpriority="high" loading="lazy" src="vitacare_service_2.webp"/>
+<div class="doctor-info">
+<h3>Dr. Ricardo Almeida</h3>
+<div class="specialty">Cardiologista</div>
+<div class="crm">CRM 45.231 — SP</div>
+</div>
+</div>
+<div class="doctor-card reveal reveal-delay-1">
+<img alt="Dra. Marina Costa" class="doctor-img" decoding="async" loading="lazy" src="vitacare_service_3.webp"/>
+<div class="doctor-info">
+<h3>Dra. Marina Costa</h3>
+<div class="specialty">Neurologista</div>
+<div class="crm">CRM 38.874 — SP</div>
+</div>
+</div>
+<div class="doctor-card reveal reveal-delay-2">
+<img alt="Dr. Felipe Torres" class="doctor-img" decoding="async" loading="lazy" src="vitacare_gallery_1.webp"/>
+<div class="doctor-info">
+<h3>Dr. Felipe Torres</h3>
+<div class="specialty">Oncologista</div>
+<div class="crm">CRM 52.108 — SP</div>
+</div>
+</div>
+<div class="doctor-card reveal reveal-delay-3">
+<img alt="Dra. Isabela Nunes" class="doctor-img" decoding="async" loading="lazy" src="vitacare_gallery_2.webp"/>
+<div class="doctor-info">
+<h3>Dra. Isabela Nunes</h3>
+<div class="specialty">Endocrinologista</div>
+<div class="crm">CRM 41.559 — SP</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ESPECIALIDADES -->
+<section class="section-specialties" id="especialidades">
+<div class="specialties-header">
+<div>
+<span class="label-tag">Nossa Expertise</span>
+<h2 class="section-title">Especialidades <em>médicas</em></h2>
+</div>
+<a class="btn-cyan" href="#agendamento">Ver Todas</a>
+</div>
+<div class="specialties-grid">
+<div class="specialty-card reveal">
+<div class="specialty-icon">
+<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24"><path d="M4.5 12.75l6 6 9-13.5"></path></svg>
+</div>
+<h3>Cardiologia</h3>
+<p>Diagnóstico e tratamento de doenças cardiovasculares com tecnologia de ponta e equipe altamente especializada.</p>
+<a class="specialty-link" href="#">Saiba mais</a>
+</div>
+<div class="specialty-card reveal reveal-delay-1">
+<div class="specialty-icon">
+<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9 12h6M12 9v6"></path></svg>
+</div>
+<h3>Neurologia</h3>
+<p>Abordagem integrada para distúrbios neurológicos com exames de imagem de última geração e protocolos internacionais.</p>
+<a class="specialty-link" href="#">Saiba mais</a>
+</div>
+<div class="specialty-card reveal reveal-delay-2">
+<div class="specialty-icon">
+<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24"><path d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+</div>
+<h3>Oncologia</h3>
+<p>Centro de referência em oncologia clínica, com tratamentos individualizados baseados em evidências científicas atuais.</p>
+<a class="specialty-link" href="#">Saiba mais</a>
+</div>
+<div class="specialty-card reveal">
+<div class="specialty-icon">
+<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24"><rect height="18" rx="2" width="18" x="3" y="3"></rect><path d="M9 9h6M9 12h6M9 15h4"></path></svg>
+</div>
+<h3>Ortopedia</h3>
+<p>Cirurgias minimamente invasivas e reabilitação avançada para o tratamento de doenças osteomusculares.</p>
+<a class="specialty-link" href="#">Saiba mais</a>
+</div>
+<div class="specialty-card reveal reveal-delay-1">
+<div class="specialty-icon">
+<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path></svg>
+</div>
+<h3>Endocrinologia</h3>
+<p>Diagnóstico e tratamento de distúrbios hormonais com acompanhamento longitudinal e medicina preventiva.</p>
+<a class="specialty-link" href="#">Saiba mais</a>
+</div>
+<div class="specialty-card reveal reveal-delay-2">
+<div class="specialty-icon">
+<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24"><path d="M20 12V6a2 2 0 00-2-2H6a2 2 0 00-2 2v6m16 0v6a2 2 0 01-2 2H6a2 2 0 01-2-2v-6m16 0H4"></path></svg>
+</div>
+<h3>Medicina Preventiva</h3>
+<p>Check-up executivo completo com análise laboratorial avançada e plano de saúde personalizado.</p>
+<a class="specialty-link" href="#">Saiba mais</a>
+</div>
+</div>
+</section>
+<!-- ESTATÍSTICAS -->
+<section class="section-stats">
+<div class="stats-grid">
+<div class="stat-block reveal">
+<strong class="count-num" data-target="15000">0</strong>
+<span>Pacientes Atendidos</span>
+</div>
+<div class="stat-block reveal reveal-delay-1">
+<strong class="count-num" data-target="42">0</strong>
+<span>Especialistas</span>
+</div>
+<div class="stat-block reveal reveal-delay-2">
+<strong class="count-num" data-target="16">0</strong>
+<span>Anos de Excelência</span>
+</div>
+<div class="stat-block reveal reveal-delay-3">
+<strong class="count-num" data-target="98">0</strong>
+<span>% de Satisfação</span>
+</div>
+</div>
+</section>
+<!-- AGENDAMENTO -->
+<section class="section-booking" id="agendamento">
+<div class="booking-inner">
+<div class="booking-info reveal">
+<span class="label-tag">Atendimento Premium</span>
+<h2 class="section-title">Agende sua <em>consulta</em> com facilidade</h2>
+<p>Nossa equipe de atendimento está disponível de segunda a sábado para garantir que você tenha acesso rápido e cômodo aos melhores especialistas.</p>
+<div class="contact-items">
+<div class="contact-item">
+<div>
+<span class="contact-label">Central de Agendamento</span>
+<span>(11) 3000-9090</span>
+</div>
+</div>
+<div class="contact-item">
+<div>
+<span class="contact-label">Endereço</span>
+<span>Av. Brigadeiro Faria Lima, 2400 — SP</span>
+</div>
+</div>
+<div class="contact-item">
+<div>
+<span class="contact-label">Horário de Funcionamento</span>
+<span>Segunda a Sábado, 7h às 21h</span>
+</div>
+</div>
+</div>
+</div>
+<div class="booking-form-wrap reveal reveal-delay-2">
+<h3 class="form-title">Formulário de Agendamento</h3>
+<form onsubmit="return false;">
+<div class="form-row-2">
+<div class="form-field">
+<label>Nome Completo</label>
+<input placeholder="Seu nome" type="text"/>
+</div>
+<div class="form-field">
+<label>Data de Nascimento</label>
+<input type="date"/>
+</div>
+</div>
+<div class="form-row-2">
+<div class="form-field">
+<label>Telefone</label>
+<input placeholder="(11) 00000-0000" type="tel"/>
+</div>
+<div class="form-field">
+<label>E-mail</label>
+<input placeholder="seu@email.com" type="email"/>
+</div>
+</div>
+<div class="form-row-2">
+<div class="form-field">
+<label>Especialidade</label>
+<select>
+<option value="">Selecione</option>
+<option>Cardiologia</option>
+<option>Neurologia</option>
+<option>Oncologia</option>
+<option>Ortopedia</option>
+<option>Endocrinologia</option>
+</select>
+</div>
+<div class="form-field">
+<label>Data Preferida</label>
+<input type="date"/>
+</div>
+</div>
+<div class="form-field">
+<label>Convênio / Plano de Saúde</label>
+<input placeholder="Informe seu convênio" type="text"/>
+</div>
+<button class="btn-cyan" style="width:100%; border:none; cursor:pointer; font-family:var(--font-sans);" type="submit">
             Confirmar Agendamento
           </button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-grid">
-      <div class="footer-about">
-        <div class="logo">
-          <div class="logo-mark"></div>
-          <div>
-            <span class="logo-text" style="color:var(--white);">Vita Care Institute</span>
-            <span class="logo-sub">Excellence in Medicine</span>
-          </div>
-        </div>
-        <p>Referência em medicina de alto padrão, unindo tecnologia, humanização e excelência clínica há mais de 16 anos.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Especialidades</h4>
-        <ul>
-          <li><a href="#">Cardiologia</a></li>
-          <li><a href="#">Neurologia</a></li>
-          <li><a href="#">Oncologia</a></li>
-          <li><a href="#">Ortopedia</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Institucional</h4>
-        <ul>
-          <li><a href="#">Sobre o Instituto</a></li>
-          <li><a href="#">Corpo Clínico</a></li>
-          <li><a href="#">Infraestrutura</a></li>
-          <li><a href="#">Acreditações</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contato</h4>
-        <ul>
-          <li><a href="#">(11) 3000-9090</a></li>
-          <li><a href="#">contato@vitacare.com.br</a></li>
-          <li><a href="#">Av. Faria Lima, 2400</a></li>
-          <li><a href="#">Emergências: 24h</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Vita Care Institute. Todos os direitos reservados.</p>
-      <p>Projeto desenvolvido por <span>Júlia Ágata de Assis</span></p>
-    </div>
-  </footer>
-
-  <script>
+</form>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer>
+<div class="footer-grid">
+<div class="footer-about">
+<div class="logo">
+<div class="logo-mark"></div>
+<div>
+<span class="logo-text" style="color:var(--white);">Vita Care Institute</span>
+<span class="logo-sub">Excellence in Medicine</span>
+</div>
+</div>
+<p>Referência em medicina de alto padrão, unindo tecnologia, humanização e excelência clínica há mais de 16 anos.</p>
+</div>
+<div class="footer-col">
+<h4>Especialidades</h4>
+<ul>
+<li><a href="#">Cardiologia</a></li>
+<li><a href="#">Neurologia</a></li>
+<li><a href="#">Oncologia</a></li>
+<li><a href="#">Ortopedia</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Institucional</h4>
+<ul>
+<li><a href="#">Sobre o Instituto</a></li>
+<li><a href="#">Corpo Clínico</a></li>
+<li><a href="#">Infraestrutura</a></li>
+<li><a href="#">Acreditações</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Contato</h4>
+<ul>
+<li><a href="#">(11) 3000-9090</a></li>
+<li><a href="#">contato@vitacare.com.br</a></li>
+<li><a href="#">Av. Faria Lima, 2400</a></li>
+<li><a href="#">Emergências: 24h</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2024 Vita Care Institute. Todos os direitos reservados.</p>
+<p>Projeto desenvolvido por <span>Júlia Ágata de Assis</span></p>
+</div>
+</footer>
+<script>
     /* ============================================================
        SCRIPT — Vita Care Institute
     ============================================================ */
@@ -1060,7 +1051,6 @@
     }, { threshold: 0.5 });
     counters.forEach(c => countObs.observe(c));
   </script>
-
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const images = document.querySelectorAll('img');
@@ -1073,6 +1063,5 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 </script>
-
 </body>
 </html>
